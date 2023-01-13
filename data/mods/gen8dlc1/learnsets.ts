@@ -183,7 +183,7 @@ export const Learnsets: {[speciesid: string]: LearnsetData} = {
 			worryseed: ["8L40", "7T", "7L36", "6T", "6L36", "5T", "5L36", "4T", "4L36"],
 		},
 	},
-	venusaur: {
+	aatrox: {
 		learnset: {
 			amnesia: ["8M", "8V"],
 			attract: ["8M", "7M", "7V", "6M", "5M", "4M", "3M"],
