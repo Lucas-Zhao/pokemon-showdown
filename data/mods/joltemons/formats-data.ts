@@ -3050,7 +3050,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		randomBattleMoves: ["quiverdance", "sleeppowder", "bugbuzz", "sludgebomb"],
 	},
-	venusaur: {
+	aatrox: {
 		tier: "UU",
 		doublesTier: "DOU",
 		randomBattleMoves: ["sunnyday", "weatherball", "solarbeam", "earthpower"],
