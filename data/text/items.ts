@@ -2239,7 +2239,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 	},
 	venusaurite: {
 		name: "Venusaurite",
-		desc: "If held by a Venusaur, this item allows it to Mega Evolve in battle.",
+		desc: "If held by a aatrox, this item allows it to Mega Evolve in battle.",
 	},
 	wacanberry: {
 		name: "Wacan Berry",
