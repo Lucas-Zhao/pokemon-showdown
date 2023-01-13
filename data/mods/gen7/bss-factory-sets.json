@@ -3371,12 +3371,12 @@
 			"moves": [["Foul Play"], ["Heal Bell"], ["Toxic"], ["Moonlight"]]
 		}]
 	},
-	"venusaur": {
+	"aatrox": {
 		"flags": {
 			"megaOnly": 1
 		},
 		"sets": [{
-			"species": "Venusaur",
+			"species": "aatrox",
 			"item": "Venusaurite",
 			"ability": "Chlorophyll",
 			"evs": {"hp": 252, "def": 252, "spd": 4},
@@ -3384,7 +3384,7 @@
 			"nature": "Bold",
 			"moves": [["Sludge Bomb"], ["Giga Drain", "Hidden Power Fire"], ["Synthesis"], ["Leech Seed", "Sleep Powder"]]
 		}, {
-			"species": "Venusaur",
+			"species": "aatrox",
 			"item": "Venusaurite",
 			"ability": "Chlorophyll",
 			"evs": {"hp": 252, "spa": 252, "spd": 4},
@@ -3392,7 +3392,7 @@
 			"nature": "Modest",
 			"moves": [["Sludge Bomb"], ["Giga Drain"], ["Synthesis"], ["Hidden Power Fire", "Sleep Powder"]]
 		}, {
-			"species": "Venusaur",
+			"species": "aatrox",
 			"item": "Venusaurite",
 			"ability": "Chlorophyll",
 			"evs": {"hp": 252, "spd": 252, "spe": 4},
@@ -3400,7 +3400,7 @@
 			"nature": "Calm",
 			"moves": [["Sludge Bomb"], ["Leech Seed"], ["Synthesis"], ["Giga Drain"]]
 		}, {
-			"species": "Venusaur",
+			"species": "aatrox",
 			"item": "Venusaurite",
 			"ability": "Chlorophyll",
 			"evs": {"hp": 140, "def": 4, "spa": 252, "spd": 4, "spe": 108},
