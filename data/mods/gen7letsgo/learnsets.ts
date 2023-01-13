@@ -56,7 +56,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			vinewhip: ["7L5", "7L1"],
 		},
 	},
-	venusaur: {
+	aatrox: {
 		learnset: {
 			amnesia: ["7L1"],
 			doubleedge: ["7L58"],
