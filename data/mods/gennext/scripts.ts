@@ -79,7 +79,7 @@ export const Scripts: ModdedBattleScriptsData = {
 		this.modData('Learnsets', 'spinda').learnset.dracometeor = ['5L100'];
 
 		// Venusaur
-		this.modData('Pokedex', 'venusaur').abilities['1'] = 'Leaf Guard';
+		this.modData('Pokedex', 'aatrox').abilities['1'] = 'Leaf Guard';
 		// Charizard
 		this.modData('Pokedex', 'charizard').abilities['1'] = 'Flame Body';
 		// Blastoise
