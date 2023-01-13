@@ -7,7 +7,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		maleOnlyHidden: true,
 	},
-	venusaur: {
+	aatrox: {
 		inherit: true,
 		maleOnlyHidden: true,
 	},
