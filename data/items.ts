@@ -6904,9 +6904,9 @@ export const Items: {[itemid: string]: ItemData} = {
 	venusaurite: {
 		name: "Venusaurite",
 		spritenum: 608,
-		megaStone: "Venusaur-Mega",
-		megaEvolves: "Venusaur",
-		itemUser: ["Venusaur"],
+		megaStone: "Aatrox-Mega",
+		megaEvolves: "Aatrox",
+		itemUser: ["Aatrox"],
 		onTakeItem(item, source) {
 			if (item.megaEvolves === source.baseSpecies.baseSpecies) return false;
 			return true;

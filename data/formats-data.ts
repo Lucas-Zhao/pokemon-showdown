@@ -9,7 +9,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 		natDexTier: "NFE",
 	},
-	venusaur: {
+	aatrox: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "OU",

@@ -7495,7 +7495,7 @@ export const Moves: {[moveid: string]: MoveData} = {
 		pp: 10,
 		priority: 0,
 		flags: {},
-		isMax: "Venusaur",
+		isMax: "Aatrox",
 		self: {
 			onHit(source) {
 				for (const side of source.side.foeSidesWithConditions()) {
