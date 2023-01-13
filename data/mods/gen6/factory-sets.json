@@ -1826,13 +1826,13 @@
         }
       ]
     },
-    "venusaur": {
+    "aatrox": {
       "flags": {
         "megaOnly": 1
       },
       "sets": [
         {
-          "species": "Venusaur",
+          "species": "aatrox",
           "item": "Venusaurite",
           "ability": "Chlorophyll",
           "evs": {"hp": 252, "atk": 0, "def": 240, "spa": 0, "spd": 0, "spe": 16},
@@ -1840,7 +1840,7 @@
           "moves": [["Giga Drain"], ["Sludge Bomb"], ["Synthesis"], ["Leech Seed"]]
         },
         {
-          "species": "Venusaur",
+          "species": "aatrox",
           "item": "Venusaurite",
           "ability": "Chlorophyll",
           "evs": {"hp": 232, "atk": 0, "def": 0, "spa": 252, "spd": 4, "spe": 20},
@@ -5346,11 +5346,11 @@
     }
   },
   "RU": {
-    "venusaur": {
+    "aatrox": {
       "flags": {},
       "sets": [
         {
-          "species": "Venusaur",
+          "species": "aatrox",
           "item": "Life Orb",
           "ability": "Overgrow",
           "evs": {"hp": 0, "atk": 0, "def": 0, "spa": 252, "spd": 4, "spe": 252},
@@ -5358,7 +5358,7 @@
           "moves": [["Leaf Storm"], ["Sludge Bomb"], ["Synthesis"], ["Hidden Power Fire"]]
         },
         {
-          "species": "Venusaur",
+          "species": "aatrox",
           "item": "Black Sludge",
           "ability": "Overgrow",
           "evs": {"hp": 252, "atk": 0, "def": 0, "spa": 92, "spd": 0, "spe": 164},
