@@ -135,7 +135,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			worryseed: ["5L36", "4T", "4L36"],
 		},
 	},
-	venusaur: {
+	aatrox: {
 		inherit: true,
 		learnset: {
 			attract: ["5M", "4M", "3M"],
