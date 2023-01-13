@@ -5,7 +5,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 	ivysaur: {
 		tier: "NFE",
 	},
-	venusaur: {
+	aatrox: {
 		randomBattleMoves: ["growth", "hiddenpowerfire", "hiddenpowerice", "leechseed", "razorleaf", "sleeppowder", "synthesis"],
 		tier: "UUBL",
 	},

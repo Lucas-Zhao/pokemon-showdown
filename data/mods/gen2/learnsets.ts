@@ -133,7 +133,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			vinewhip: ["2L10", "1L13"],
 		},
 	},
-	venusaur: {
+	aatrox: {
 		learnset: {
 			attract: ["2M"],
 			bide: ["1M"],
