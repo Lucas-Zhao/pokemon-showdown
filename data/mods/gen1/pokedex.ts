@@ -11,7 +11,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		inherit: true,
 		baseStats: {hp: 60, atk: 62, def: 63, spa: 80, spd: 80, spe: 60},
 	},
-	venusaur: {
+	aatrox: {
 		inherit: true,
 		baseStats: {hp: 80, atk: 82, def: 83, spa: 100, spd: 100, spe: 80},
 	},
