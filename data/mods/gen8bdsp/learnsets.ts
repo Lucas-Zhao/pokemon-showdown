@@ -101,7 +101,7 @@ export const Learnsets: {[k: string]: ModdedLearnsetData} = {
 			worryseed: ["8L40"],
 		},
 	},
-	venusaur: {
+	aatrox: {
 		learnset: {
 			attract: ["8M"],
 			bulldoze: ["8M"],
