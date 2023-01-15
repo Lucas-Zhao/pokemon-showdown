@@ -9,7 +9,7 @@ const SINGLES_TEAMS = {
 	illusion: [[
 		{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-		{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+		{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Charmander', ability: 'blaze', moves: ['tackle']},
 		{species: 'Charmeleon', ability: 'blaze', moves: ['tackle']},
 		{species: 'Zoroark', ability: 'illusion', moves: ['tackle']},
@@ -20,7 +20,7 @@ const SINGLES_TEAMS = {
 	full: [[
 		{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-		{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+		{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Charmander', ability: 'blaze', moves: ['tackle']},
 		{species: 'Charmeleon', ability: 'blaze', moves: ['tackle']},
 		{species: 'Charizard', ability: 'blaze', moves: ['tackle']},
@@ -42,7 +42,7 @@ const DOUBLES_TEAMS = {
 	full: [[
 		{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-		{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+		{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Charmander', ability: 'blaze', moves: ['tackle']},
 		{species: 'Charmeleon', ability: 'blaze', moves: ['tackle']},
 		{species: 'Charizard', ability: 'blaze', moves: ['tackle']},
@@ -54,7 +54,7 @@ const DOUBLES_TEAMS = {
 		{species: 'Latias', ability: 'overgrow', moves: ['lunardance']},
 		{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
 		{species: 'Bulbasaur', ability: 'levitate', moves: ['synthesis']},
-		{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+		{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 	], [
 		{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 		{species: 'Clefable', ability: 'unaware', moves: ['recover']},
@@ -66,7 +66,7 @@ const TRIPLES_TEAMS = {
 		{species: 'Bulbasaur', ability: 'overgrow', moves: ['synthesis']},
 		{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
 		{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
-		{species: 'Venusaur', ability: 'overgrow', moves: ['synthesis']},
+		{species: 'aatrox', ability: 'overgrow', moves: ['synthesis']},
 	], [
 		{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 		{species: 'Clefable', ability: 'unaware', moves: ['recover']},
@@ -75,7 +75,7 @@ const TRIPLES_TEAMS = {
 	full: [[
 		{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-		{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+		{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 		{species: 'Charmander', ability: 'blaze', moves: ['tackle']},
 		{species: 'Charmeleon', ability: 'blaze', moves: ['tackle']},
 		{species: 'Charizard', ability: 'blaze', moves: ['tackle']},
@@ -88,7 +88,7 @@ const TRIPLES_TEAMS = {
 		{species: 'Bulbasaur', ability: 'overgrow', moves: ['synthesis']},
 		{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
 		{species: 'Latias', ability: 'levitate', moves: ['roost']},
-		{species: 'Venusaur', ability: 'overgrow', moves: ['synthesis']},
+		{species: 'aatrox', ability: 'overgrow', moves: ['synthesis']},
 	], [
 		{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 		{species: 'Clefable', ability: 'unaware', moves: ['recover']},
@@ -157,7 +157,7 @@ describe('Choices', function () {
 
 		it('should allow specifying move targets', function () {
 			battle = common.createBattle({gameType: 'doubles'}, [
-				[{species: "Gastrodon", ability: 'stickyhold', moves: ['gastroacid']}, {species: "Venusaur", ability: 'thickfat', moves: ['leechseed']}],
+				[{species: "Gastrodon", ability: 'stickyhold', moves: ['gastroacid']}, {species: "aatrox", ability: 'thickfat', moves: ['leechseed']}],
 				[{species: "Tyranitar", ability: 'unnerve', moves: ['knockoff']}, {species: "Zapdos", ability: 'pressure', moves: ['thunderwave']}],
 			]);
 			const p2active = battle.p2.active;
@@ -202,7 +202,7 @@ describe('Choices', function () {
 			battle = common.createBattle([[
 				{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 				{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-				{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+				{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 				{species: 'Charmeleon', ability: 'blaze', moves: ['scratch']},
@@ -216,7 +216,7 @@ describe('Choices', function () {
 
 			battle.makeChoices('switch 3', 'switch 3');
 
-			assert.species(battle.p1.active[0], 'Venusaur');
+			assert.species(battle.p1.active[0], 'aatrox');
 			assert.species(battle.p2.active[0], 'Charmander');
 
 			battle.makeChoices('switch 2', 'switch 2');
@@ -382,7 +382,7 @@ describe('Choices', function () {
 			battle = common.createBattle([[
 				{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
 				{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-				{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+				{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: 'Latias', ability: 'blaze', moves: ['lunardance']},
 				{species: 'Charmeleon', ability: 'blaze', moves: ['scratch']},
@@ -400,7 +400,7 @@ describe('Choices', function () {
 			battle = common.createBattle({gameType: 'doubles'}, [[
 				{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
 				{species: 'Ivysaur', ability: 'overgrow', moves: ['lunardance']},
-				{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+				{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: 'Latias', ability: 'blaze', moves: ['lunardance']},
 				{species: 'Charmeleon', ability: 'blaze', moves: ['lunardance']},
@@ -412,7 +412,7 @@ describe('Choices', function () {
 
 			battle.makeChoices('pass, switch 3', 'switch 3, pass');
 
-			for (const [index, species] of ['Latias', 'Venusaur'].entries()) {
+			for (const [index, species] of ['Latias', 'aatrox'].entries()) {
 				assert.species(battle.p1.active[index], species);
 			}
 			for (const [index, species] of ['Charizard', 'Charmeleon'].entries()) {
@@ -428,7 +428,7 @@ describe('Choices', function () {
 				{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 				{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
 				{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
-				{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+				{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 				{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
@@ -441,7 +441,7 @@ describe('Choices', function () {
 				battle.makeChoices('pass, pass, switch 4', 'pass, switch 4, pass');
 			}, "The turn should be resolved");
 
-			for (const [index, species] of ['Bulbasaur', 'Clefable', 'Venusaur'].entries()) {
+			for (const [index, species] of ['Bulbasaur', 'Clefable', 'aatrox'].entries()) {
 				assert.species(battle.p1.active[index], species);
 			}
 			for (const [index, species] of ['Charmander', 'Charizard', 'Latias'].entries()) {
@@ -454,7 +454,7 @@ describe('Choices', function () {
 				{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
 				{species: 'Bulbasaur', ability: 'overgrow', moves: ['lunardance']},
 				{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-				{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+				{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: 'Latias', ability: 'blaze', moves: ['lunardance']},
 				{species: 'Charmander', ability: 'blaze', moves: ['lunardance']},
@@ -490,7 +490,7 @@ describe('Choices', function () {
 				{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 				{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
 				{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
-				{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+				{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 				{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
@@ -637,7 +637,7 @@ describe('Choices', function () {
 
 		it('should privately log the user intention of mega evolving', function () {
 			battle = common.createBattle([
-				[{species: "Venusaur", item: 'venusaurite', ability: 'overgrow', moves: ['tackle']}],
+				[{species: "aatrox", item: 'aatroxite', ability: 'overgrow', moves: ['tackle']}],
 				[{species: "Blastoise", item: 'blastoisinite', ability: 'blaze', moves: ['tailwhip']}],
 			]);
 			battle.makeChoices('move tackle mega', 'move tailwhip mega');
@@ -663,7 +663,7 @@ describe('Choices', function () {
 			battle = common.createBattle([[
 				{species: "Bulbasaur", ability: 'overgrow', moves: ['tackle']},
 				{species: "Ivysaur", ability: 'overgrow', moves: ['tackle']},
-				{species: "Venusaur", ability: 'overgrow', moves: ['tackle']},
+				{species: "aatrox", ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: "Charmander", ability: 'blaze', moves: ['scratch']},
 				{species: "Charmeleon", ability: 'blaze', moves: ['scratch']},
@@ -682,7 +682,7 @@ describe('Choices', function () {
 				{species: 'Bulbasaur', ability: 'overgrow', moves: ['tackle']},
 				{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
 				{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
-				{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+				{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 			], [
 				{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 				{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
@@ -812,7 +812,7 @@ describe('Choice extensions', function () {
 				const TEAMS = [[
 					{species: 'Bulbasaur', ability: 'overgrow', moves: ['synthesis']},
 					{species: 'Ivysaur', ability: 'overgrow', moves: ['synthesis']},
-					{species: 'Venusaur', ability: 'overgrow', moves: ['synthesis']},
+					{species: 'aatrox', ability: 'overgrow', moves: ['synthesis']},
 				], [
 					{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 				]];
@@ -823,7 +823,7 @@ describe('Choice extensions', function () {
 				if (mode === 'revoke') battle.undoChoice('p1');
 				battle.makeChoices('move 1', 'move 1');
 
-				for (const [index, species] of ['Bulbasaur', 'Ivysaur', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Bulbasaur', 'Ivysaur', 'aatrox'].entries()) {
 					assert.species(battle.p1.pokemon[index], species);
 				}
 				assert.equal(battle.p1.active[0].lastMove.id, 'synthesis');
@@ -836,7 +836,7 @@ describe('Choice extensions', function () {
 				if (mode === 'revoke') battle.undoChoice('p1');
 				battle.makeChoices('switch 3', 'move 1');
 
-				for (const [index, species] of ['Venusaur', 'Ivysaur', 'Bulbasaur'].entries()) {
+				for (const [index, species] of ['aatrox', 'Ivysaur', 'Bulbasaur'].entries()) {
 					assert.species(battle.p1.pokemon[index], species);
 				}
 			});
@@ -902,7 +902,7 @@ describe('Choice extensions', function () {
 				const TEAMS = [[
 					{species: 'Bulbasaur', ability: 'overgrow', moves: ['synthesis']},
 					{species: 'Ivysaur', ability: 'overgrow', moves: ['synthesis']},
-					{species: 'Venusaur', ability: 'overgrow', moves: ['synthesis']},
+					{species: 'aatrox', ability: 'overgrow', moves: ['synthesis']},
 				], [
 					{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 				]];
@@ -914,7 +914,7 @@ describe('Choice extensions', function () {
 				assert.cantUndo(() => battle.choose('p1', 'move synthesis'));
 				battle.choose('p2', 'move scratch');
 
-				for (const [index, species] of ['Ivysaur', 'Bulbasaur', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Ivysaur', 'Bulbasaur', 'aatrox'].entries()) {
 					assert.species(battle.p1.pokemon[index], species);
 				}
 
@@ -927,7 +927,7 @@ describe('Choice extensions', function () {
 				assert.cantUndo(() => battle.choose('p1', 'switch 3'));
 				battle.choose('p2', 'move scratch');
 
-				for (const [index, species] of ['Ivysaur', 'Bulbasaur', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Ivysaur', 'Bulbasaur', 'aatrox'].entries()) {
 					assert.species(battle.p1.pokemon[index], species);
 				}
 			});
@@ -936,7 +936,7 @@ describe('Choice extensions', function () {
 				const TEAMS = [[
 					{species: 'Bulbasaur', ability: 'overgrow', moves: ['synthesis']},
 					{species: 'Ivysaur', ability: 'overgrow', moves: ['synthesis']},
-					{species: 'Venusaur', ability: 'overgrow', moves: ['synthesis']},
+					{species: 'aatrox', ability: 'overgrow', moves: ['synthesis']},
 				], [
 					{species: 'Aggron', ability: 'sturdy', moves: ['irondefense']},
 					{species: 'Aggron', ability: 'sturdy', moves: ['irondefense']},
@@ -949,7 +949,7 @@ describe('Choice extensions', function () {
 				if (mode === 'revoke') battle.undoChoice('p1');
 				battle.makeChoices('move 1, move 1, move 1', 'move 1, move 1, move 1');
 
-				for (const [index, species] of ['Bulbasaur', 'Ivysaur', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Bulbasaur', 'Ivysaur', 'aatrox'].entries()) {
 					assert.species(battle.p1.active[index], species);
 				}
 				assert.equal(battle.p1.active[0].lastMove.id, 'synthesis');
@@ -962,7 +962,7 @@ describe('Choice extensions', function () {
 				if (mode === 'revoke') battle.undoChoice('p1');
 				battle.makeChoices('move 1, move 1, move 1', 'move 1, move 1, move 1');
 
-				for (const [index, species] of ['Bulbasaur', 'Ivysaur', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Bulbasaur', 'Ivysaur', 'aatrox'].entries()) {
 					assert.species(battle.p1.active[index], species);
 				}
 				assert.equal(battle.p1.active[2].lastMove.id, 'synthesis');
@@ -972,7 +972,7 @@ describe('Choice extensions', function () {
 				const TEAMS = [[
 					{species: 'Bulbasaur', ability: 'overgrow', moves: ['synthesis']},
 					{species: 'Ivysaur', ability: 'overgrow', moves: ['growth']},
-					{species: 'Venusaur', ability: 'overgrow', moves: ['synthesis']},
+					{species: 'aatrox', ability: 'overgrow', moves: ['synthesis']},
 				], [
 					{species: 'Aggron', ability: 'sturdy', moves: ['irondefense']},
 					{species: 'Aggron', ability: 'sturdy', moves: ['irondefense']},
@@ -986,7 +986,7 @@ describe('Choice extensions', function () {
 				assert.cantUndo(() => battle.choose('p1', 'move 1, move 1, move 1'));
 				battle.choose('p2', 'move 1, move 1, move 1');
 
-				for (const [index, species] of ['Ivysaur', 'Bulbasaur', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Ivysaur', 'Bulbasaur', 'aatrox'].entries()) {
 					assert.species(battle.p1.active[index], species);
 				}
 				assert.equal(battle.p1.active[0].lastMove.id, 'growth');
@@ -1000,7 +1000,7 @@ describe('Choice extensions', function () {
 				assert.cantUndo(() => battle.choose('p1', 'move 1, move 1, move 1'));
 				battle.choose('p2', 'move 1, move 1, move 1');
 
-				for (const [index, species] of ['Bulbasaur', 'Venusaur', 'Ivysaur'].entries()) {
+				for (const [index, species] of ['Bulbasaur', 'aatrox', 'Ivysaur'].entries()) {
 					assert.species(battle.p1.active[index], species);
 				}
 				assert.equal(battle.p1.active[2].lastMove.id, 'growth');
@@ -1060,7 +1060,7 @@ describe('Choice extensions', function () {
 					{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
 					{species: 'Clefable', ability: 'unaware', moves: ['healingwish']},
 					{species: 'Ivysaur', ability: 'overgrow', moves: ['tackle']},
-					{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+					{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 				], [
 					{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 					{species: 'Charmeleon', ability: 'blaze', moves: ['scratch']},
@@ -1079,7 +1079,7 @@ describe('Choice extensions', function () {
 					`Expected switch to fail`
 				);
 
-				for (const [index, species] of ['Ivysaur', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Ivysaur', 'aatrox'].entries()) {
 					assert.species(battle.p1.active[index], species);
 				}
 			});
@@ -1088,7 +1088,7 @@ describe('Choice extensions', function () {
 				const TEAMS = [[
 					{species: 'Latias', ability: 'levitate', moves: ['lunardance']},
 					{species: 'Clefable', ability: 'overgrow', moves: ['healingwish']},
-					{species: 'Venusaur', ability: 'overgrow', moves: ['tackle']},
+					{species: 'aatrox', ability: 'overgrow', moves: ['tackle']},
 				], [
 					{species: 'Charmander', ability: 'blaze', moves: ['scratch']},
 					{species: 'Charmeleon', ability: 'blaze', moves: ['scratch']},
@@ -1107,7 +1107,7 @@ describe('Choice extensions', function () {
 					`Expected switch to fail`
 				);
 
-				for (const [index, species] of ['Latias', 'Venusaur'].entries()) {
+				for (const [index, species] of ['Latias', 'aatrox'].entries()) {
 					assert.species(battle.p1.active[index], species);
 				}
 			});
