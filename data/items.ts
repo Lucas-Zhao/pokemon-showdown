@@ -6901,7 +6901,7 @@ export const Items: {[itemid: string]: ItemData} = {
 		num: 1123,
 		gen: 8,
 	},
-	venusaurite: {
+	aatroxite: {
 		name: "Venusaurite",
 		spritenum: 608,
 		megaStone: "Aatrox-Mega",

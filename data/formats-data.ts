@@ -14,12 +14,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		tier: "Illegal",
 		natDexTier: "OU",
 	},
-	venusaurmega: {
+	aatroxmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "(OU)",
 	},
-	venusaurgmax: {
+	aatroxgmax: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 	},
