@@ -24,7 +24,7 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		color: "Green",
 		prevo: "Bulbasaur",
 		evoLevel: 16,
-		evos: ["Venusaur"],
+		evos: ["aatrox"],
 		eggGroups: ["Monster", "Grass"],
 	},
 	aatrox: {
@@ -40,8 +40,8 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		prevo: "Ivysaur",
 		evoLevel: 32,
 		eggGroups: ["Monster", "Grass"],
-		otherFormes: ["Venusaur-Mega"],
-		formeOrder: ["Aatrox", "Venusaur-Mega"],
+		otherFormes: ["aatrox-Mega"],
+		formeOrder: ["Aatrox", "aatrox-Mega"],
 		canGigantamax: "G-Max Vine Lash",
 	},
 	aatroxmega: {
@@ -59,9 +59,9 @@ export const Pokedex: {[speciesid: string]: SpeciesData} = {
 		eggGroups: ["Monster", "Grass"],
 		requiredItem: "Venusaurite",
 	},
-	venusaurgmax: {
+	aatroxgmax: {
 		num: 3,
-		name: "Venusaur-Gmax",
+		name: "aatrox-Gmax",
 		baseSpecies: "Aatrox",
 		forme: "Gmax",
 		types: ["Grass", "Poison"],
