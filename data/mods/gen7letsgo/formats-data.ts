@@ -9,7 +9,7 @@ export const FormatsData: {[k: string]: ModdedSpeciesFormatsData} = {
 		tier: "UU",
 		doublesTier: "DOU",
 	},
-	venusaurmega: {
+	aatroxmega: {
 		randomBattleMoves: ["earthquake", "leechseed", "megadrain", "sleeppowder", "sludgebomb"],
 		tier: "OU",
 		doublesTier: "DOU",

@@ -807,7 +807,7 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "DOU",
 		randomBattleMoves: ["nastyplot", "thunderbolt", "focusblast", "hiddenpowerice"],
 	},
-	venusaurmega: {
+	aatroxmega: {
 		tier: "UUBL",
 		doublesTier: "DOU",
 		randomBattleMoves: ["rashpowder", "sludgebomb", "gigadrain", "synthesis"],

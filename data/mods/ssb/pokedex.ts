@@ -150,7 +150,7 @@ export const Pokedex: {[k: string]: ModdedSpeciesData} = {
 		baseStats: {hp: 60, atk: 80, def: 100, spa: 135, spd: 100, spe: 95},
 	},
 	// Meicoo
-	venusaurmega: {
+	aatroxmega: {
 		inherit: true,
 		abilities: {0: "Unaware"},
 	},

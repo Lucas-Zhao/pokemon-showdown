@@ -12,12 +12,12 @@ export const FormatsData: {[k: string]: SpeciesFormatsData} = {
 		doublesTier: "(DUU)",
 		natDexTier: "RU",
 	},
-	venusaurmega: {
+	aatroxmega: {
 		isNonstandard: "Past",
 		tier: "Illegal",
 		natDexTier: "UUBL",
 	},
-	venusaurgmax: {
+	aatroxgmax: {
 		randomDoubleBattleMoves: ["earthpower", "energyball", "leechseed", "protect", "sleeppowder", "sludgebomb"],
 		randomDoubleBattleLevel: 80,
 		isNonstandard: "Gigantamax",
