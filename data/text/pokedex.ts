@@ -8,10 +8,10 @@ export const PokedexText: {[k: string]: PokedexText} = {
 	aatrox: {
 		name: "Aatrox",
 	},
-	venusaurmega: {
+	aatroxmega: {
 		name: "Aatrox-Mega",
 	},
-	venusaurgmax: {
+	aatroxgmax: {
 		name: "Aatrox-Gmax",
 	},
 	charmander: {

@@ -2237,7 +2237,7 @@ export const ItemsText: {[k: string]: ItemText} = {
 		desc: "The holder ignores rain- and sun-based effects. Damage and accuracy calculations from attacks used by the holder are affected by rain and sun, but not attacks used against the holder.",
 		shortDesc: "The holder ignores rain- and sun-based effects.",
 	},
-	venusaurite: {
+	aatroxite: {
 		name: "Venusaurite",
 		desc: "If held by a aatrox, this item allows it to Mega Evolve in battle.",
 	},
